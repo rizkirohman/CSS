@@ -1,0 +1,66 @@
+/*Menghilangkan efek margin bawaan browser dan mengganti jenis huruf*/
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*Menghapus bullet pada list, memberikan efek warna pada background, etc*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+/*Agar menu berjajar kesamping*/
+li {float: left;}
+
+/*Mengubah default tampilan <a>, mengganti warna pada tulisan, dll*/
+li a, .dropbtn {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+}
+
+/*Memberikan efek hover ke menu yg pilih*/
+li a:hover, .dropdown:hover {
+	background-color: #3498db;
+}
+
+/*Menyembunyikan isi konten dari dropdown, etc*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 170px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1
+}
+
+/*Memformat tampilan konten dari dropdown*/
+.dropdown-content a {
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/*Menampilkan konten dropdown ketika di hover*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*Memberikan efek warna background dari isi dropdown*/
+.dropdown-content a:hover {
+	background-color: #3498db;
+	color: #fff;
+}
+
+/*Merapihkan padding pada element p*/
+div p {
+	padding: 12px;
+}
