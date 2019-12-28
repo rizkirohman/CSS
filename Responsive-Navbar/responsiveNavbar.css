@@ -1,0 +1,47 @@
+/*Menghilangkan efek margin bawaan browser dan mengganti jenis huruf*/
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*Menghapus bullet pada list, memberikan efek warna pada background, etc*/
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+/*Agar menu berjajar kesamping*/
+ul.topnav li {	float: left; }
+
+/*Mengubah default tampilan <a>, mengganti warna pada tulisan, dll*/
+ul.topnav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+}
+
+/*membedakan warna background dan tulisan pada menu yang sedang aktif*/
+ul.topnav li a.active {
+	background-color: #3498db;
+	color: #111;
+}
+
+/*memberikan efek hover pada menu kecuali pada menu yg sedang aktif*/
+ul.topnav li a:hover:not(.active) {
+	background-color: #111;
+}
+
+/*memberikan efek responsive*/
+@media screen and (max-width: 450px) {
+	ul.topnav li {float: none;}
+}
+
+/*memberikan padding pada element div*/
+div {
+	padding: 0 16px;
+}
