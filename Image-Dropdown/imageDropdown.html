@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Dropdown</title>
+
+<style type="text/css">
+
+	/*tampilan font menjadi sans-serif*/
+	body {font-family: sans-serif;}
+	
+	/*pengaturan posisi konten dan tampilan*/
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	/*menghilangkan konten sebelum di hover*/
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	/*menampilkan konten ketika di hover*/
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	/*ukuran gambar sebelum di hover*/
+	.imgbeforehover {
+		width: 120px;
+	}
+
+	/*ukuran gambar setelah di hover*/
+	.imgafterhover {
+		width: 650px;
+	}
+
+	/*deskripsi pada konten gambar*/
+	.description {
+		padding: 15px;
+		text-align: center;
+	}
+
+</style>
+
+</head>
+<body>
+
+<p>Hover the image below to open the dropdown content.</p>
+
+<div class="dropdown">
+	<img class="imgbeforehover" src="https://images.pexels.com/photos/2422274/pexels-photo-2422274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Beautiful Forest">
+
+  <div class="dropdown-content">
+  	<img class="imgafterhover" src="https://images.pexels.com/photos/2422274/pexels-photo-2422274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Beautiful Forest">
+
+  <div class="description">Beautiful Forest</div>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
