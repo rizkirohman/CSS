@@ -1,0 +1,34 @@
+/* Menghapus bullet list, dan memberikan warna background, etc.*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+/* Agar posisi menu berjajar kesamping*/
+li {
+	float: left;
+}
+
+/* Menghapus efek garis bawah pada menu*/
+li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+}
+
+/* Memberikan efek warna background pada menu yang sedang dipilih */
+.active {
+	background-color: #3498db;
+	color: #111;
+}
+
+/* efek hover pada menu kecuali pada menu yang aktif */
+li a:hover:not(.active) {
+	background-color: #111;
+}
