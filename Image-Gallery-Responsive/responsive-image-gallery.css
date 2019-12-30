@@ -1,0 +1,54 @@
+/*tampilkan semua element dengan border-box dan sans-serif*/
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+/*resize image*/
+.imgsize {
+	width: 300px;
+}
+
+/*efek border*/
+div.gallery {
+	border: 1px solid #ddd;
+}
+
+/*efek border ketika di hover*/
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+/*size image full*/
+div.gallery img {
+	width: 100%;
+}
+
+/*tata letak desc dibawah image*/
+div.description {
+	padding: 10px;
+	text-align: center;
+}
+
+/*tampilkan gambar menjadi 4 bagian secara berjajar, dll*/
+.responsive {
+	width: 25%;
+	padding: 0 5px;
+	float: left;
+}
+
+/*efek responsive*/
+@media only screen and (max-width: 700px) {
+	/*tampilkan gambar menjadi 2 bagian secara berjajar, dll*/
+	.responsive {
+		width: 50%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	/*tampilkan gambar menjadi 1 bagian, dll*/
+	.responsive {
+		width: 100%;
+	}
+}
